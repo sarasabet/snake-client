@@ -14,19 +14,6 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('Successfully connected to game server')
   })
-  //send data to server/ name and moves
-  // conn.on('connect', () => {
-  //   const array = ["Move: up", "Move: left", "Move: left",  "Move: up", "Move: left", "Move: left", "Move: right","Move: right"]
-  //   conn.write("Name: SIS" );
-  //   array.forEach(element => {
-  //     setInterval(() => {
-  //       conn.write(element  );
-  //     }, 500);
-  //   });
-
-  // });
-
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
